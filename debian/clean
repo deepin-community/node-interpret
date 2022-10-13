@@ -1,0 +1,3 @@
+test/fixtures/*/*/node_modules/
+test/fixtures/*/*/package-lock.json
+test/fixtures/eg/0/egcache/

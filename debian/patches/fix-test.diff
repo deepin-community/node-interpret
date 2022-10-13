@@ -1,0 +1,28 @@
+Description: fix test
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-10-20
+
+--- a/test/index.js
++++ b/test/index.js
+@@ -89,6 +89,11 @@
+       return attempts;
+     }
+ 
++    // Skip wisp
++    if (ext === '.wisp') {
++      return attempts;
++    }
++
+     modules.forEach(function(mod, idx) {
+       if (mod && typeof mod !== 'string') {
+         mod = mod.module;
+@@ -236,7 +241,7 @@
+     var result = rechoir.prepare(extensions, fixture);
+ 
+     expect(Array.isArray(result)).toEqual(true);
+-    expect(result[0].moduleName).toEqual(path.join(__dirname, '../mjs-stub'));
++    expect(result[0].moduleName).toEqual('/usr/share/nodejs/interpret/mjs-stub');
+     done();
+   });
+ 

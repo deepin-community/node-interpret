@@ -1,0 +1,15 @@
+Description: add fix for expect 28 (jest)
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-12-01
+
+--- a/test/index.js
++++ b/test/index.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ 
+-var expect = require('expect');
++var {expect} = require('expect');
+ 
+ var path = require('path');
+ var Module = require('module');

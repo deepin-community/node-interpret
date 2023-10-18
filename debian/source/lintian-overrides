@@ -1,9 +1,4 @@
 # Test files used only during autopkgtest
-source-is-missing debian/tests/test_modules/expect/lib/Expectation.js line length is 564 characters (>512)
-source-is-missing debian/tests/test_modules/expect/umd/expect.js line length is 564 characters (>512)
-source-contains-browserified-javascript debian/tests/test_modules/expect/umd/expect.js code fragment:(function webpackuniversalmoduledefinition(root, factory) { if(typeof exports === 'obje
-source-contains-prebuilt-javascript-object debian/tests/test_modules/expect/lib/Expectation.js line length is 564 characters (>512)
-source-contains-prebuilt-javascript-object debian/tests/test_modules/expect/umd/expect.js line length is 564 characters (>512)
-source-contains-prebuilt-javascript-object debian/tests/test_modules/expect/umd/expect.min.js
-very-long-line-length-in-source-file debian/tests/test_modules/expect/lib/Expectation.js line length is 564 characters (>512)
-very-long-line-length-in-source-file debian/tests/test_modules/expect/umd/expect.js line length is 565 characters (>512)
+source-is-missing [debian/tests/test_modules/expect/lib/Expectation.js]
+source-contains-prebuilt-javascript-object [debian/tests/test_modules/expect/lib/Expectation.js]
+very-long-line-length-in-source-file * [debian/tests/test_modules/expect/lib/Expectation.js:*]

@@ -9,29 +9,11 @@ License: Expat
 
 Files: debian/*
 Copyright: 2016 Pirate Praveen <praveen@debian.org>
- 2020 Xavier Guimard <yadd@debian.org>
+ 2020-2022 Yadd <yadd@debian.org>
 License: Expat
 
 Files: debian/tests/test_modules/*
 Copyright: 1014-2020 Jordan Harband
-License: Expat
-
-Files:
- debian/tests/test_modules/is-map/*
- debian/tests/test_modules/is-set/*
- debian/tests/test_modules/is-weakset/*
- debian/tests/test_modules/is-weakmap/*
- debian/tests/test_modules/which-collection/*
-Copyright: 2019 Inspect JS
-License: Expat
-
-Files: debian/tests/test_modules/expect/*
-Copyright: 2015 Michael Jackson
-License: Expat
-
-Files: debian/tests/test_modules/parse-node-version/*
-Copyright: 2018 Blaine Bublitz <blaine.bublitz@gmail.com>
- 2018 Eric Schoffstall <yo@contra.io>
 License: Expat
 
 Files: debian/tests/test_modules/*/node_modules/isarray/*

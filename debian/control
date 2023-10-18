@@ -5,7 +5,22 @@ Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.deb
 Uploaders: Pirate Praveen <praveen@debian.org>
 Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
-Standards-Version: 4.5.0
+ , node-es-get-iterator <!nocheck>
+ , node-is-bigint <!nocheck>
+ , node-is-boolean-object <!nocheck>
+ , node-is-generator-function <!nocheck>
+ , node-is-map <!nocheck>
+ , node-is-number-object <!nocheck>
+ , node-is-regex <!nocheck>
+ , node-is-set <!nocheck>
+ , node-is-string <!nocheck>
+ , node-is-weakmap <!nocheck>
+ , node-is-weakset <!nocheck>
+ , node-object-keys <!nocheck>
+ , node-parse-node-version <!nocheck>
+ , node-which-boxed-primitive <!nocheck>
+ , node-which-collection <!nocheck>
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-interpret
 Vcs-Git: https://salsa.debian.org/js-team/node-interpret.git
 Homepage: https://github.com/tkellen/node-interpret
@@ -15,6 +30,7 @@ Rules-Requires-Root: no
 Package: node-interpret
 Architecture: all
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: dictionary of file extensions and associated module loaders
  This is used by Liftoff to automatically require dependencies for
  configuration files, and by rechoir for registering module loaders.

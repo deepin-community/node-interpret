@@ -1,0 +1,24 @@
+Description: drop test on deprecated transpilers
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1033816
+Forwarded: not-needed
+Last-Update: 2023-04-03
+
+--- a/test/index.js
++++ b/test/index.js
+@@ -126,6 +126,7 @@
+     var fixtureDir = path.dirname(fixture);
+     var idx = attempt.index;
+ 
++    if( name !== 'babel/register' && name !== 'buble/register' ) {
+     it('can require ' + extension + ' using ' + name + ' (' + idx + ')', function(done) {
+       var minVersion = minVersions[module];
+ 
+@@ -232,6 +233,7 @@
+       }
+       done();
+     });
++    }
+   });
+ 
+   it('does not error with the .mjs extension', function(done) {
